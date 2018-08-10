@@ -1,6 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
-require_relative '../controllers/cryptomonies_controller'
+require_relative '../controllers/crypto_controller'
 
 
 class StartScrap
