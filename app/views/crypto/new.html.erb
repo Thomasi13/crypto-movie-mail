@@ -1,0 +1,19 @@
+<div class="colonne"> 
+
+
+<%= form_for( @crypto,  url: crypto_index_path) do |f| %>
+ 
+  	<div class="field">
+    	<%= f.label :name %><br />
+    	<%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+  	</div>
+	<% end %>
+
+
+
+	<% @crypto_all.each do |x| %>
+		<div class="list"><%= x.name %></div>
+		</br>
+	<%end %>
+
+</div>
